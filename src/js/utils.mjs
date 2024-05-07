@@ -31,3 +31,14 @@ export function getParams(param) {
   const product = urlParams.get(param); 
   return product;
 }
+
+export function renderListWithTemplate (templateFn, parentElement, list, position = 'afterbegin', clear = false) {
+  const element = document.querySelector(parentElement);      
+  const renderedList = list.map(templateFn);
+
+  if (clear) {
+    element.innerHTML = '';
+  }
+  element.insertAdjacentHTML(position,renderedList.join(''));
+
+}
