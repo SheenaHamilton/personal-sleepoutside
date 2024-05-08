@@ -1,13 +1,13 @@
 {
     "Alerts": [
         {
-            "message": "This is only a test",
-            "background": "darkblue", 
-            "color": "white" 
+            "message": "This is an alert test",
+            "background": "#c6e3ea", 
+            "color": "black" 
         },
         {
             "message": "Sale Ends Thursday!",
-            "background": "red", 
+            "background": "#bd3e3e", 
             "color": "white" 
         }
     ]

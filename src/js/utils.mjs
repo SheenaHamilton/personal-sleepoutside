@@ -40,5 +40,18 @@ export function renderListWithTemplate (templateFn, parentElement, list, positio
     element.innerHTML = '';
   }
   element.insertAdjacentHTML(position,renderedList.join(''));
+}
 
+export function convertToJson(res) {
+  if (res.ok) {
+      return res.json();
+  } else {
+      throw new Error('Bad Response');
+  }
+}
+
+export function  getData(path) {
+    return fetch(path)
+      .then(convertToJson)
+      .then((data) => data);
 }
