@@ -119,9 +119,43 @@ button {
   max-width: 600px;
   margin: auto;
 }
+.categories {
+  display: grid;
+  width: 80%;
+  grid-template-columns: repeat(4,1fr);
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.2em;
+  margin: auto auto;
+}
+.categories img{
+  width: 150px;
+  height: 100%;
+}
+.categories a:link {
+  text-decoration: none;
+}
+
+.categories a:visited {
+  text-decoration: none;
+}
+
+.categories a:hover {
+  text-decoration: none;
+}
+
+.categories a:active {
+  text-decoration: none;
+}
+
 .products {
   padding: 0.5em;
 }
+
+.products h2 {
+  text-transform: capitalize;
+}
+
 .product-list {
   display: flex;
   flex-flow: row wrap;
